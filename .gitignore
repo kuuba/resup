@@ -6,6 +6,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.Python
+env/
 bin/
 build/
 develop-eggs/
@@ -19,8 +21,6 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-.Python
-env/
 
 # Installer logs
 pip-log.txt
