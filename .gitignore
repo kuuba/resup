@@ -55,3 +55,4 @@ docs/_build/
 # Project-specific files
 db.sqlite3
 django-admin-resumable-js/
+media/*

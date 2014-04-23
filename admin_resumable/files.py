@@ -83,8 +83,7 @@ class ResumableFile(object):
             self.storage.save('%s%s%s' % (
                 self.filename,
                 self.chunk_suffix,
-                self.kwargs.get('resumableChunkNumber')
-                #.zfill(3)
+                self.kwargs.get('resumableChunkNumber').zfill(3)
             ), file)
 
     @property
