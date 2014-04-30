@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jquery',
     'admin_resumable',
 )
 
@@ -82,3 +83,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = 'media'
+
+TEMPLATE_STRING_IF_INVALID = 'vale string: %s'
+
+from django.conf import global_settings
+TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
+            "django.core.context_processors.request",
+            )
